@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+
+  spark:
+    image: pyspark
+    volumes:
+      - .:/home/project
+    working_dir: /home/project
+    command: bash -c "chown -R root:root /home/project && /opt/spark/bin/spark-submit job.py"
