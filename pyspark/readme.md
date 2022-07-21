@@ -26,4 +26,5 @@ depois de rodar os jobs o container irá bloquear seu diretório. Para libera-lo
 sudo chown -R $USER:$USER $PWD
 ```
 
-# Raciocínio da Solução
+# Metodologia
+Escolhi rodar o pyspark com docker pois também é a forma mais rápida de testar a solução. Daria para provisionar um cluster na GCP ou na AWS, mas isso teria um custo muito alto pra uma demo. Fazer o spark submit e depois encerrar o node simula uma tarefa de cluster efemero, onde o job é executado e depois o cluster encerrado. 

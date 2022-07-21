@@ -30,4 +30,7 @@ depois de rodar os jobs o container irá bloquear seu diretório. Para libera-lo
 sudo chown -R $USER:$USER $PWD
 ```
 
-# Raciocínio da Solução
+# Metodologia
+Aqui, o split dos dados é muito mais facil com pyspark. Pensando em um ambiente de bigdata, o PySpark seria uma das primeiras ferramentas a ser pensada para resolver o problema. Por isso estou repetindo o mesmo processo que na pasta pyspark. 
+
+Daria para provisionar um cluster na GCP ou na AWS, mas isso teria um custo muito alto pra uma demo. Fazer o spark submit e depois encerrar o node simula uma tarefa de cluster efemero, onde o job é executado e depois o cluster encerrado. 

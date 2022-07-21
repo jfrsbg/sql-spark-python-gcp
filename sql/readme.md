@@ -38,4 +38,5 @@ Caso queira deletar as tables por algum motivo:
 docker exec -i database mysql -u user -ppassword desafio_engenheiro < drop.sql
 ```
 
-# Raciocínio da Solução
+# Metodologia
+Pensando em facilitar, a ideia foi criar um container e deixar a instância rodando para que possamos fazer os comandos livremente. Inicialmente pensei em criar algo na nuvem, mas com isso eu não conseguiria demonstrar as minhas habilidades provisionando um database local e manipulando-o.
